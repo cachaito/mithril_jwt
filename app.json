@@ -1,0 +1,12 @@
+{
+    "apps": [
+        {
+            "name"        : "mithril_jwt_server",
+            "script"      : "server/server.js",
+            "log_file"    : "log/pm2/mithril_jwt_server.log",
+            "error_file"  : "log/pm2/mithril_jwt_server-error.log",
+            "watch"       : true,
+            "env"         : {"NODE_ENV": "production", "SECRET": "haha", "PORT": 5555}
+        }
+    ]
+}

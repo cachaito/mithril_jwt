@@ -1,0 +1,20 @@
+{
+    "users": [
+        {
+            "id": "01",
+            "login": "ziutek",
+            "name": "Zenon",
+            "surname": "Szczudło",
+            "email": "ziutek1950@o2.pl",
+            "password": "test1"
+        },
+        {
+            "id": "02",
+            "login": "xxx",
+            "name": "Marika",
+            "surname": "Motyka",
+            "email": "",
+            "password": "123"
+        }
+    ]
+}
