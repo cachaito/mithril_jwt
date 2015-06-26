@@ -9,7 +9,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "preinstall": "npm i -g nodemon",
+    "preinstall": "npm i -g nodemon && npm install -g karma-cli",
     "prewatch:js": "browserify app/js/app.js -o out/bundle.js -d --insert-global-vars=NUMBER,GG",
     "watch:js": "watchify app/js/app.js -o out/bundle.js -v -d",
     "serve": "http-server out -p 9999",
