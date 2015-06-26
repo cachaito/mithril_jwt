@@ -1,39 +1,43 @@
 {
-    "name": "mithril_jwt",
-    "version": "0.0.9",
-    "description": "Mithril test app",
-    "main": "out/bundle.js",
-    "config": {
-        "SECRET": "haha",
-        "PORT": "7777"
-    },
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "preinstall": "npm i -g nodemon",
-        "prewatch:js": "browserify app/js/app.js -o out/bundle.js -d --insert-global-vars=NUMBER,GG",
-        "watch:js": "watchify app/js/app.js -o out/bundle.js -v -d",
-        "serve": "http-server out -p 9999",
-        "server": "nodemon server/server.js",
-        "start": "cp app/index.html out/index.html && parallelshell \"npm run watch:js\" \"npm run serve\""
-    },
-    "keywords": [
-        "mithril",
-        "jwt"
-    ],
-    "private": true,
-    "author": "bszuster",
-    "license": "Apache 2.0",
-    "devDependencies": {
-        "body-parser": "^1.12.4",
-        "browserify": "^10.2.0",
-        "express": "^4.12.4",
-        "http-server": "^0.8.0",
-        "jsonwebtoken": "^5.0.1",
-        "morgan": "^1.5.3",
-        "parallelshell": "^1.1.1",
-        "watchify": "^3.2.1"
-    },
-    "dependencies": {
-        "mithril": "^0.2.0"
-    }
+  "name": "mithril_jwt",
+  "version": "0.0.9",
+  "description": "Mithril test app",
+  "main": "out/bundle.js",
+  "config": {
+    "SECRET": "haha",
+    "PORT": "7777"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "preinstall": "npm i -g nodemon",
+    "prewatch:js": "browserify app/js/app.js -o out/bundle.js -d --insert-global-vars=NUMBER,GG",
+    "watch:js": "watchify app/js/app.js -o out/bundle.js -v -d",
+    "serve": "http-server out -p 9999",
+    "server": "nodemon server/server.js",
+    "start": "cp app/index.html out/index.html && parallelshell \"npm run watch:js\" \"npm run serve\""
+  },
+  "keywords": [
+    "mithril",
+    "jwt"
+  ],
+  "private": true,
+  "author": "bszuster",
+  "license": "Apache 2.0",
+  "devDependencies": {
+    "body-parser": "^1.12.4",
+    "browserify": "^10.2.0",
+    "express": "^4.12.4",
+    "http-server": "^0.8.0",
+    "jasmine-core": "^2.3.4",
+    "jsonwebtoken": "^5.0.1",
+    "karma": "^0.12.37",
+    "karma-chrome-launcher": "^0.2.0",
+    "karma-jasmine": "^0.3.5",
+    "morgan": "^1.5.3",
+    "parallelshell": "^1.1.1",
+    "watchify": "^3.2.1"
+  },
+  "dependencies": {
+    "mithril": "^0.2.0"
+  }
 }
